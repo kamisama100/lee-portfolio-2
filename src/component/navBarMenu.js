@@ -1,41 +1,47 @@
 import React from 'react'
-import {AiOutlineMenu} from 'react-icons/ai';
 
 function NavBarMenu() {
 
-    const handleMouseIn=()=>{
-        const slide = document.getElementById('slide');
-        slide.style.transform = 'translateX(-15%)';
-        slide.style.opacity = '100';
-
-        const menu = document.getElementById('menu');
-        menu.style.transform = 'rotate(180deg)';
+    const navBarColor = () =>{
+        const y = window.scrollY;
+        let home = document.getElementById('home');
+        let abouts = document.getElementById('abouts');
+        let projects = document.getElementById('projects');
+        let contact = document.getElementById('contact');
+        if (y <=199){
+            home.style.color = '#FDB750';
+            abouts.style.color = '#FFFFFF';
+            contact.style.color = '#FFFFFF';
+        }else if (y >=350 && y <=750){
+            home.style.color = '#FFFFFF';
+            abouts.style.color = '#FDB750';
+            projects.style.color = '#FFFFFF';
+        }
+        else if (y >=751 && y <= 2000){
+            abouts.style.color = '#FFFFFF';
+            projects.style.color = '#FDB750';
+            contact.style.color = '#FFFFFF';
+        }
+        else if(y >=2001){
+            projects.style.color = '#FFFFFF';
+            contact.style.color = '#FDB750';
+        }
     };
-    const handleMouseOut=()=>{
-        const slide = document.getElementById('slide');
-        slide.style.transform = 'translateX(-0%)';
-        slide.style.opacity = '0';
-
-        const menu = document.getElementById('menu');
-        menu.style.transform = 'rotate(0deg)';
-    };
+    window.addEventListener('scroll',navBarColor);
 
     return (
-        <div className='z-50 relative  items-center flex space-x-5 text-[28px] font-light' onMouseLeave={handleMouseOut} onMouseEnter={handleMouseIn} >
-            <button>
-              <AiOutlineMenu className = "hover:text-[#FDB750] transition-all ease-in-out duration-[500ms]" id="menu"/>
-            </button>
-            <div className='absolute inline-block whitespace-nowrap right-0 opacity-0 space-x-5 transition-all duration-500 delay-75' id = "slide">
-                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300" >
+        <div className='z-50 relative  items-center flex space-x-5 text-[28px] font-light'>
+            <div className='absolute inline-block whitespace-nowrap right-0 space-x-5 transition-all duration-500 delay-75' id = "slide">
+                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300 text-[#FDB750] " id ="home" >
                     Home
                 </button>
-                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300" >
+                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300" id ="abouts" >
                     About
                 </button>
-                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300" >
+                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300" id ="projects" >
                     Projects
                 </button>
-                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300" >
+                <button className = "hover:text-[#FDB750] transition-colors ease-in-out duration-300" id ="contact" >
                     Contact
                 </button>
             </div>

@@ -5,9 +5,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+        'wiggle': 'wiggle 2s infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      }
     },
     fontFamily:{
-      workSans:['Work Sans', 'sans-serif'],
+      workSans:['Roboto Mono', 'monospace'],
     },
   },
   plugins: [],
