@@ -5,9 +5,11 @@ export default function Footer() {
 
   return (
     <div className='relative bg-[#2b2a2a] w-full flex flex-col items-center pt-[2rem] pb-[3rem] '>
-      <a className='absolute -top-5 left-0 right-0 m-auto bg-[#FDB750] w-fit transition-transform duration-500 hover:-translate-y-5' href = "/#">
+      <button className='absolute -top-5 left-0 right-0 m-auto bg-[#FDB750] w-fit transition-transform duration-500 hover:-translate-y-5'>
+        <a href = "#top">
         <BsArrowUpShort size = {40}/>
-      </a>
+        </a>
+      </button>
       <div className='flex flex-row w-fit h-[50px] space-x-4 mt-5'>
         <AiFillGithub className="transition-all duration-300 text-[40px] hover:text-[50px]" />
         <AiFillLinkedin className='transition-all duration-300 text-[40px] hover:text-[50px]'/>

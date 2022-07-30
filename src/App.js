@@ -13,30 +13,33 @@ function App() {
     app.style.opacity = '100';
   }
 
+
+
   return (
     <div className="App w-full">
       <div className='flex flex-col text-[32px] font-workSans opacity-30 transition-opacity duration-1000 ease-in' onLoad={handleOpacity} id = "app" >
-        <nav className='z-50 fixed flex bg-[#2c2b2b] opacity-[0.96] items-center w-full justify-between px-[6rem] py-2'>
-          <div className=''>
-            <h2 className='hover:text-[#FDB750] font-semibold text-[35px] transition-colors type ease-in-out duration-300 cursor-pointer tracking-wider '>Lee</h2>
+        <nav className='h-[70px] z-50 fixed flex flex-row bg-[#2c2b2b] opacity-[0.96] items-center w-full justify-between px-[6rem] py-2'>
+          <div className='xs:hidden md:block'>
+            <h2 className='xs:w-[0%] md:w-fit hover:text-[#FDB750] font-semibold text-[35px] transition-colors type ease-in-out duration-300 cursor-pointer tracking-wider '>Lee</h2>
           </div>
-          <div>
+          <div className='xs:w-[100%] md:w-fit'>
             <NavBarMenu/>
           </div>
         </nav>
-        <section id = "home" name = "home">
-          <div className='flex justify-center h-[500px] items-center mt-[8rem] pt-5 pb-5'>
-            <img src = {me} className ='rounded-full h-[400px] z-10' alt = "me"  />
+        <section id = "home" className='mb-[8rem]' >
+          <div className='flex justify-center xs:h-[350px] md:h-[500px] items-center mt-[8rem] xs:pt-0 md:pt-5 pb-5'>
+            <img src = {me} className ='rounded-full xs:h-[300px] sm:h-[350px] md:h-[400px] z-10' alt = "me"  />
           </div>
-          <div className='z-10 px-[5rem] w-[85%] h-auto mx-auto mt-[3.5rem] font-semibold text-left text-[60px]'>
+          <div className='z-10 xs:px-[1.5rem] md:px-[0.5rem] lg:px-[3rem] xs:w-full md:w-[85%] h-auto mx-auto mt-[3.5rem] font-semibold text-left text-[60px]' id ="about">
               <AboutMe/>
           </div>
         </section>
-        <section id = "projects" className='space-y-[7rem] h-auto mt-5'>
+        <section id = "proj" className='space-y-[7rem] h-auto'>
           <div className='w-fit block mx-auto text-[40px] '>Projects</div>
           <Projects/>
+        
         </section>
-        <section id = "contact" className='space-y-[2rem] h-auto'>
+        <section id = "contact" className='space-y-[2rem] mt-[4rem] h-auto'>
           <div className='w-fit block mx-auto text-[40px] pt-5'>Contact</div>
           <Contact/>
         </section>
