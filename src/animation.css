@@ -56,6 +56,6 @@
   transition: box-shadow .2s ease-in-out;
 }
 .btn:hover{
-    box-shadow: inset 0 -50px 0 0px #FDB750;
+    box-shadow: inset 0 -100px 0 0px #FDB750;
     color:black;
 }

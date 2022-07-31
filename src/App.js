@@ -30,7 +30,7 @@ function App() {
           <div className='flex justify-center xs:h-[350px] md:h-[500px] items-center mt-[8rem] xs:pt-0 md:pt-5 pb-5'>
             <img src = {me} className ='rounded-full xs:h-[300px] sm:h-[350px] md:h-[400px] z-10' alt = "me"  />
           </div>
-          <div className='z-10 xs:px-[1.5rem] md:px-[0.5rem] lg:px-[3rem] xs:w-full md:w-[85%] h-auto mx-auto mt-[3.5rem] font-semibold text-left text-[60px]' id ="about">
+          <div className='z-10 xs:px-[1.5rem] md:px-[0.5rem] lg:px-[3rem] w-[90%] mx-auto h-auto mt-[3.5rem] font-semibold text-left text-[60px]' id ="about">
               <AboutMe/>
           </div>
         </section>
