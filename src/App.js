@@ -34,10 +34,9 @@ function App() {
               <AboutMe/>
           </div>
         </section>
-        <section id = "proj" className='space-y-[7rem] h-auto'>
-          <div className='w-fit block mx-auto text-[40px] '>Projects</div>
+        <section id = "proj" className='space-y-[3rem] h-auto'>
+          <div className='w-fit block mx-auto text-[40px]'>Projects</div>
           <Projects/>
-        
         </section>
         <section id = "contact" className='space-y-[2rem] mt-[4rem] h-auto'>
           <div className='w-fit block mx-auto text-[40px] pt-5'>Contact</div>

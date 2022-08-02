@@ -1,14 +1,22 @@
 import React from 'react'
 import p1 from '../img/project1.PNG'
 import p2 from '../img/project2.PNG'
+import p3 from '../img/project3.PNG'
+import p4 from '../img/project4.PNG'
 
 export default function Projects() {
     var proj = [
         {
-            title:'Todo-List App',img:p1,text:'A Todo List Application built with React, TypeScript, and Tailwind.'
+            title:'Todo-List App',img:p1,text:'A Todo List Application built with React, TypeScript, and Tailwind.', link:'https://kamisama100.github.io/todo-app/', gitRepo: 'https://github.com/kamisama100/landing-page'
         },
         {
-            title:'Landing Page',img:p2,text:'A Simple Landing Page built with React, Tailwind, and CSS Libraries.'
+            title:'Build A Brand',img:p2,text:'A Simple Landing Page built with React, Tailwind, and CSS Libraries.', link:'https://kamisama100.github.io/landing-page/', gitRepo:'https://github.com/kamisama100/landing-page'
+        },
+        {
+            title:'Simple Login Form', img:p3, text:'A simple login form created using HTML, and CSS.', link:'https://kamisama100.github.io/login-form/', gitRepo:'https://github.com/kamisama100/login-form'
+        },
+        {
+            title:'Mairala', img:p4, text:'A fully responsive landing page made using HTML, and Tailwind', link:'https://kamisama100.github.io/dev-test/src/index.html',gitRepo:'https://github.com/kamisama100/dev-test'
         }
     ];
 
@@ -25,8 +33,14 @@ export default function Projects() {
                         <p className='xs:text-[16px] md:text-[18px] xs:w-full sm:w-[95%] md:w-[90%] lg:w-[75%]'>
                             {proj.text}
                         </p>
-                        <button className='xs:text-[20px] md:text-[24px] lg:text-[28px] btn inline-block pt-2 pb-2 border-b-[4px] xs:w-[50%] sm:w-[60%] border-[#FDB750]'>Go to App</button>
-                        <button className='xs:text-[20px] md:text-[24px] lg:text-[28px] btn inline-block pt-2 pb-2 border-b-[4px] xs:w-[50%] sm:w-[60%] border-[#FDB750]' >Go to Repo</button>
+                        <a href = {proj.link} target = "_blank" rel="noreferrer" className='xs:w-[50%] sm:w-[60%]' >
+                        <button className='xs:text-[20px] md:text-[24px] lg:text-[28px] btn inline-block pt-2 pb-2 border-b-[4px] w-full  border-[#FDB750]'>
+                            Go to App
+                        </button>
+                        </a>
+                        <a href = {proj.gitRepo} target = "_blank" rel="noreferrer" className='xs:w-[50%] sm:w-[60%]'>
+                            <button className='xs:text-[20px] md:text-[24px] lg:text-[28px] btn inline-block pt-2 pb-2 border-b-[4px] w-full border-[#FDB750]' >Go to Repo</button>
+                        </a>
                     </div>
                 </div>
             ))

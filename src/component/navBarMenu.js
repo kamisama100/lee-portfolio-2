@@ -17,12 +17,12 @@ function NavBarMenu() {
             abouts.style.color = '#FDB750';
             projects.style.color = '#FFFFFF';
         }
-        else if (y >=751 && y <= 2000){
+        else if (y >=751 && y <= 2800){
             abouts.style.color = '#FFFFFF';
             projects.style.color = '#FDB750';
             contact.style.color = '#FFFFFF';
         }
-        else if(y >=2001){
+        else if(y >=2801){
             projects.style.color = '#FFFFFF';
             contact.style.color = '#FDB750';
         }
