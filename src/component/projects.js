@@ -7,16 +7,16 @@ import p4 from '../img/project4.PNG'
 export default function Projects() {
     var proj = [
         {
-            title:'Todo-List App',img:p1,text:'A Todo List Application built with React, TypeScript, and Tailwind.', link:'https://kamisama100.github.io/todo-app/', gitRepo: 'https://github.com/kamisama100/landing-page'
+            title:'Todo-List App',img:p1,text:'A Todo List Application built with React, TypeScript, and Tailwind.', link:'https://kamisama100.github.io/todo-app/', gitRepo: 'https://github.com/kamisama100/todo-app'
         },
         {
-            title:'Build A Brand',img:p2,text:'A Simple Landing Page built with React, Tailwind, and CSS Libraries.', link:'https://kamisama100.github.io/landing-page/', gitRepo:'https://github.com/kamisama100/landing-page'
+            title:'Build A Brand',img:p2,text:'A Landing Page built with React, Tailwind, and CSS Libraries.', link:'https://kamisama100.github.io/landing-page/', gitRepo:'https://github.com/kamisama100/landing-page'
         },
         {
-            title:'Simple Login Form', img:p3, text:'A simple login form created using HTML, and CSS.', link:'https://kamisama100.github.io/login-form/', gitRepo:'https://github.com/kamisama100/login-form'
+            title:'Bling', img:p3, text:'A Business Landing Page created using HTML, and CSS.', link:'https://kamisama100.github.io/bling/', gitRepo:'https://github.com/kamisama100/bling'
         },
         {
-            title:'Mairala', img:p4, text:'A fully responsive landing page made using HTML, and Tailwind', link:'https://kamisama100.github.io/dev-test/src/index.html',gitRepo:'https://github.com/kamisama100/dev-test'
+            title:'Mairala', img:p4, text:'A landing page made using HTML, and Tailwind', link:'https://kamisama100.github.io/dev-test/src/index.html',gitRepo:'https://github.com/kamisama100/dev-test'
         }
     ];
 
